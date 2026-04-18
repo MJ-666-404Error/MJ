@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Profile</title>
+
+    <link rel="icon" href="https://i.pinimg.com/1200x/a5/cd/4d/a5cd4dd72842f58fc1da55d970855202.jpg" type="image/x-icon">
+    <style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+
+        .profile-img {
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            background: white;
+            color: 764ba2;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2)
+        }
+
+        .link-card:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px 0;
+            font-size: 0.8rem;
+            position: fixed;
+            bottom: -50px;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+        }
+
+        .link-card[data-link="ig"]::before {
+            content: "\f7c4";
+            font-family: Font Awesome 6 Free;
+            font-weight: 900;
+            margin-right: 10px;
+            color: #ffca28;
+        }
+
+
+        .link-card[data-link="wa"]::before {
+            content: \f5b3;
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            color: #4caf50;
+        }
+
+
+
+        .butterfly-golden {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 50px;
+            height: 50px;
+            background-image: url('butterfly-giorno.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            animation: float-giorno 3s ease-in-out infinite;
+        }
+
+
+        @keyframes float-giorno {
+            0%, 100% {transform: translateY(0);}
+            50% {transform: translateY(-10px);}
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://i.pinimg.com/736x/16/85/19/1685193c927745b117c83f3fa5dc2a7a.jpg" alt="Foto Profil" class="profile-img">
+            <h1>Haikal "MJ" Ferdiansyah</h1>
+            <p>Coding Student | Musician Multi-Instrumentalist</p>
+        </header>
+    
+        <main class="links">
+            <a href="https://www.instagram.com/marcusjuliusss" target="_blank" class="link-card">Insta</a>
+            <a href="https://wa.me/6288298491478" target="_blank" class="link-card">Contact Me</a>
+            <a href="https://www.tiktok.com/@notgoodmarc" target="_blank" class="link-card">Tiktok</a>
+            </main>
+        </div>
+
+        <footer>
+            <p>&copy;2026 MJs All Rights Reserved.</p>
+        </footer>
+</body>
+</html>
